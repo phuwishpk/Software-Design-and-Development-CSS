@@ -772,6 +772,8 @@ blockquote {
 }
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![Screenshot 2025-02-11 023106](https://github.com/user-attachments/assets/b5dd7b37-9ad8-4fdf-bf1b-18c7a8394041)
+
 
 [](#การทดลองที่-6-Layout-และการจัดวางอิลิเมนต์)
 ## การทดลองที่ 6: Layout และการจัดวางอิลิเมนต์
