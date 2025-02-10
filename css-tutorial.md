@@ -364,7 +364,8 @@ background-size: cover;
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
-![Uploading Screenshot 2025-02-11 011550.png…]()
+
+![Screenshot 2025-02-11 011550](https://github.com/user-attachments/assets/3b138b96-2105-406f-bf47-cdb5b28775d8)
 
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
