@@ -173,51 +173,13 @@ div > p {
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        /* การใช้ Element Selector */
-        nav {
-            background-color: #333;
-            padding: 15px;
-        }
-
-        /* การใช้ Descendant Selector */
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-
-        /* การใช้ Child Selector */
-        nav > ul > li {
-            margin: 0 10px;
-        }
-
-        /* การใช้ Class Selector */
-        .menu-item {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-        }
-
-        /* การใช้ Pseudo-class */
-        .menu-item:hover {
-            background-color: #555;
-            border-radius: 3px;
-        }
-
-        /* การใช้ ID Selector */
-        #active {
-            background-color: #007bff;
-            border-radius: 3px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="#" class="menu-item" id="active">หน้าแรก</a></li>
-            <li><a href="#" class="menu-item">สินค้า</a></li>
+            <li><a href="#" class="menu-item">หน้าแรก</a></li>
+            <li><a href="#" class="menu-item" id="active">สินค้า</a></li>
             <li><a href="#" class="menu-item">เกี่ยวกับเรา</a></li>
             <li><a href="#" class="menu-item">ติดต่อ</a></li>
         </ul>
@@ -232,9 +194,26 @@ div > p {
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" class="menu-item">หน้าแรก</a></li>
+            <li><a href="#" class="menu-item" id="active">สินค้า</a></li>
+            <li><a href="#" class="menu-item">เกี่ยวกับเรา</a></li>
+            <li><a href="#" class="menu-item">ติดต่อ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
+![Screenshot 2025-02-11 004411](https://github.com/user-attachments/assets/cdebfb8b-f7e6-4fe7-8245-67d572d9bf02)
 
 
 [](#การทดลองที่-3-การจัดการสีและพื้นหลัง)
@@ -338,9 +317,55 @@ background-size: cover;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ดที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('images/product1.jpg');"></div>
+        <div class="product-info">
+            <h2 class="product-title">สินค้า 1</h2>
+            <p class="product-price">฿1,000</p>
+            <p class="product-description">รายละเอียดสินค้k 1</p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('images/product2.jpg');"></div>
+        <div class="product-info">
+            <h2 class="product-title">สินค้า 2</h2>
+            <p class="product-price">฿2,000</p>
+            <p class="product-description">รายละเอียดสินค้า 2</p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('images/product3.jpg');"></div>
+        <div class="product-info">
+            <h2 class="product-title">สินค้า 3</h2>
+            <p class="product-price">฿3,000</p>
+            <p class="product-description">รายละเอียดสินค้า 3</p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+    <div class="product-card">
+        <div class="product-image" style="background-image: url('images/product4.jpg');"></div>
+        <div class="product-info">
+            <h2 class="product-title">สินค้า 4</h2>
+            <p class="product-price">฿4,000</p>
+            <p class="product-description">รายละเอียดสินค้า 4</p>
+            <a href="#" class="product-button">เพิ่มลงตะกร้า</a>
+        </div>
+    </div>
+</body>
+</html>
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
+![Uploading Screenshot 2025-02-11 011550.png…]()
+
 
 [](#การทดลองที่-4-การจัดการขนาดและระยะห่าง)
 ## การทดลองที่ 4: การจัดการขนาดและระยะห่าง
@@ -436,12 +461,90 @@ border: 1px solid black;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สถิติผู้ใช้งาน</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stats-container">
+        <div class="stat-box">
+            <div class="stat-number">1,234</div>
+            <div class="stat-label">ผู้ใช้งาน</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">5.6K</div>
+            <div class="stat-label">ยอดขาย</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">ความพึงพอใจ</div>
+        </div>
+    </div>
+</body>
+</html>
+
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* คอนเทนเนอร์หลัก */
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+/* กล่องสถิติ */
+.stat-box {
+    flex: 1;
+    margin: 0 20px;
+    padding: 2.5rem;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* ขนาดตัวเลข */
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff5733;
+    margin-bottom: 0.75rem;
+}
+
+/* ป้ายกำกับ */
+.stat-label {
+    font-size: 1.2rem;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* เอฟเฟกต์เมื่อ hover */
+.stat-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+ }
+
+}
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
+![Screenshot 2025-02-11 013950](https://github.com/user-attachments/assets/9229389f-8645-4d23-91fd-59a10418c149)
 
 [](#การทดลองที่-5-การจัดการข้อความและฟอนต์)
 ## การทดลองที่ 5: การจัดการข้อความและฟอนต์
@@ -554,10 +657,119 @@ font-weight: bold;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บทความที่น่าสนใจ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <article class="blog-post">
+        <header class="post-header">
+            <h1 class="post-title">เเนะนำตัวเอง</h1>
+            <div class="post-meta">โพสต์เมื่อ 11 กุมภาพันธ์ 2025 | โดย ผู้เขียน ภวิชญ์ ประกอบจิตร 67030183 </div>
+        </header>
+        
+        <div class="post-content">
+            <p>เนิ้อหาของเพจนี้เป็นการเเนะนำตัวเอง</p>
+
+            <h2>1. การเเนะนำตัวเอง</h2>
+            <p>สวัสดีครับผม ชื่อ นาย ภูวิชญ์ ประกอบจิตร ชื่อเล่นชื่อ ภู ปัจจุบันมีอายุ 20 ปี เรียนอยู่ในชั้นปี 1
+            <br>  คณะครุศาสตร์อุตสาหกรรม เเละ เทคโนโลยี สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+            </p>
+
+            <blockquote>
+                "การที่ผมเลือกดรียน คณะ นี้เพราะผม อยากมีความก้าวหน้าด้านเทคโนโลยี เเละ เป็น อาจารย์ที่ดีในอนาคต"
+            </blockquote>
+
+            <h2>2. ความฝันในอนาคต</h2>
+            <p>อยากเแ็นครูที่ดี เด็กๆชื่นชอบ มีอาชีพมั่นคง เป็นที่พึ่งของครอบครัว</p>
+        </div>
+    </article>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* คอนเทนเนอร์ของบทความ */
+.blog-post {
+    max-width: 850px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ส่วนหัวของบทความ */
+.post-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* หัวข้อหลัก */
+.post-title {
+    font-size: 2.8rem;
+    color: #ff0000;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+/* ข้อมูลเมตาของโพสต์ */
+.post-meta {
+    color: #632626;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* เนื้อหาของบทความ */
+.post-content {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* การตั้งค่าข้อความในเนื้อหา */
+.post-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* หัวข้อย่อย */
+.post-content h2 {
+    font-size: 2rem;
+    color: #b3000f;
+    margin: 2rem 0 1rem;
+}
+
+/* Blockquote (คำพูด) */
+blockquote {
+    font-style: italic;
+    border-left: 5px solid #007bff;
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    color: #555;
+    background: #f1f1f1;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+/* เพิ่มเอฟเฟกต์เมื่อ hover หัวข้อ */
+.post-title:hover {
+    color: #b30018;
+    text-decoration: underline;
+    cursor: pointer;
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
 
@@ -701,13 +913,144 @@ font-weight: bold;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>หน้าร้านค้า - Grid Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="product-grid">
+        <!-- สินค้าชิ้นที่ 1 -->
+        <div class="product-card">
+            <div class="product-image-wrapper">
+                <img src="images/product1.jpg" alt="สินค้าตัวอย่างที่ 1" class="product-image">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">สินค้าตัวอย่างที่ 1</h3>
+                <div class="product-price">฿1,299</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image-wrapper">
+                <img src="images/product2.jpg" alt="สินค้าตัวอย่างที่ 2" class="product-image">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">สินค้าตัวอย่างที่ 2</h3>
+                <div class="product-price">฿1,499</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image-wrapper">
+                <img src="images/product3.jpg" alt="สินค้าตัวอย่างที่ 3" class="product-image">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">สินค้าตัวอย่างที่ 3</h3>
+                <div class="product-price">฿1,699</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image-wrapper">
+                <img src="images/product4.jpg" alt="สินค้าตัวอย่างที่ 4" class="product-image">
+            </div>
+            <div class="product-details">
+                <h3 class="product-title">สินค้าตัวอย่างที่ 4</h3>
+                <div class="product-price">฿1,899</div>
+                <div class="product-action">
+                    <button class="add-to-cart">เพิ่มลงตะกร้า</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+/* รีเซ็ตค่าพื้นฐาน */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* กำหนด Layout แบบ Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* แก้ไข */
+    gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* กล่องสินค้า */
+.product-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+/* กรอบรูปภาพสินค้า */
+.product-image-wrapper {
+    border: 5px solid #007bff; /* หรือสีที่ต้องการ */
+    border-radius: 10px; /* มุมมน */
+    overflow: hidden; /* ซ่อนส่วนเกิน */
+}
+
+/* รูปภาพสินค้า */
+.product-image {
+    width: 100%;  /* กำหนดความกว้างของรูปภาพ */
+    height: auto; /* กำหนดความสูงของรูปภาพ */
+    object-fit: cover; /* ให้ภาพพอดีกับขนาดที่กำหนด */
+    object-position: center; /* จัดให้อยู่ตรงกลาง */
+    background-color: #f5f5f5; /* สีพื้นหลังถ้าภาพโปร่งใส */
+}
+
+/* รายละเอียดสินค้า */
+.product-details {
+    padding: 10px;
+}
+
+.product-title {
+    font-size: 0.95rem; /* ปรับขนาดให้เล็กลง */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    color: #28a745;
+}
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
-
+![Screenshot 2025-02-11 033233](https://github.com/user-attachments/assets/351dda9c-30d6-48e3-9003-94b9bef0297e)
 
 ### ตัวอย่างการใช้งาน: การสร้างเลย์เอาต์ Modern Dashboard
 
@@ -854,10 +1197,234 @@ font-weight: bold;
 
 ### ผลการทดลอง
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>แดชบอร์ด</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1>My Dashboard</h1>
+            <nav>
+                <button>โปรไฟล์</button>
+                <button
+                <button>ออกจากระบบ</button>
+            </nav>
+        </header>
+
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li>หน้าแรก</li>
+                    <li>รายงาน</li>
+                    <li>การตั้งค่า</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>ยอดขายรวม</h3>
+                    <p>฿240,000</p>
+                </div>
+                <div class="stat-card">
+                    <h3>จำนวนออเดอร์</h3>
+                    <p>5,894</p>
+                </div>
+                <div class="stat-card">
+                    <h3>ลูกค้าใหม่</h3>
+                    <p>501</p>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart">
+                    <h3>กราฟแสดงยอดขาย</h3>
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <div class="chart">
+                    <h3>สัดส่วนสินค้าขายดี</h3>
+                    <canvas id="productChart"></canvas>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // กราฟแสดงยอดขาย
+        const ctxSales = document.getElementById('salesChart').getContext('2d');
+        const salesChart = new Chart(ctxSales, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                datasets: [{
+                    label: 'ยอดขาย',
+                    data: [120000, 150000, 170000, 140000, 180000, 200000, 250000],
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderWidth: 2,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'กราฟแสดงยอดขายรายเดือน'
+                    }
+                }
+            }
+        });
+
+        // กราฟสัดส่วนสินค้าขายดี
+        const ctxProduct = document.getElementById('productChart').getContext('2d');
+        const productChart = new Chart(ctxProduct, {
+            type: 'pie',
+            data: {
+                labels: ['สินค้า A', 'สินค้า B', 'สินค้า C', 'สินค้า D'],
+                datasets: [{
+                    label: 'สัดส่วนสินค้าขายดี',
+                    data: [300, 50, 100, 150],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    title: {
+                        display: true,
+                        text: 'สัดส่วนสินค้าขายดี'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
 ```
 ```css
-[วางโค้ด CSS ที่นี่]
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #8dc6d4;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+    background: rgb(70, 132, 190);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav button {
+    background-color: #faa1bf; /* สีพื้นหลัง */
+    color: white; /* สีข้อความ */
+    border: none; /* ไม่มีขอบ */
+    border-radius: 20px; /* ทำให้มุมโค้งมน */
+    padding: 10px 20px; /* ขนาดของปุ่ม */
+    font-size: 16px; /* ขนาดของข้อความ */
+    cursor: pointer; /* เปลี่ยนรูปแบบของลูกศรเมื่อชี้ไปที่ปุ่ม */
+    transition: background-color 0.3s, transform 0.3s; /* เอฟเฟกต์เคลื่อนไหว */
+}
+
+.header nav button:hover {
+    background-color: #9b0e83; /* เปลี่ยนสีเมื่อเลื่อนเมาส์ไปที่ปุ่ม */
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อเลื่อนเมาส์ไปที่ปุ่ม */
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background: #032649a2;
+    color: white;
+    padding: 1rem;
+    border-right: 2px solid #07213b;
+}
+
+.main-content {
+    grid-area: main;
+    padding: 1rem;
+    background: #f5f7fa;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    background: rgba(155, 135, 228, 0.575);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.stat-card h3 {
+    color: #fdfdfd; /* เปลี่ยนสีของหัวข้อ */
+}
+
+.stat-card p {
+    color: #df5f5f; /* เปลี่ยนสีของข้อความในพารากราฟ */
+    font-weight: bold; /* ทำให้ข้อความมีน้ำหนักเข้มขึ้น */
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+.chart-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.chart {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(224, 221, 221, 0.1);
+}
+
 ```
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+
+![Screenshot 2025-02-11 035611](https://github.com/user-attachments/assets/3b081a2e-e7ab-45cc-aa78-66529bc01696)
 
